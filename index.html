@@ -20,13 +20,13 @@
             </div>
         </div>
     </div>
-    <header>
+    <!-- <header>
         <div class="container">
             <div class="logo">
                 <img src="./images/logo.webp" alt="Lavanya Dental Clinic Logo">
             </div>
             <nav>
-                <ul>
+                <ul class="largenav">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
@@ -37,7 +37,20 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> -->
+    <nav class="navbar">
+        <div class="logo"><img src="./images/logo.webp"></div>
+        <button class="toggle-button">&#9776;</button>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
 
     <section id="hero">
         <div class="hero-content">
@@ -219,13 +232,13 @@
         <div class="container services2">
             <h2>SERVICES OFFERED</h2>
             <div class="row">
-                <div class="vid1"><iframe  src="https://www.youtube.com/embed/Xzo4SbxSDto"
+                <div class="vid1"><iframe src="https://www.youtube.com/embed/Xzo4SbxSDto"
                         title="Top Dental Clinic In Hyderabad | Dr. Lavanya Dental Clinic Banjarahills and Madhapur #dentalclinic"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="vid2"><iframe  src="https://www.youtube.com/embed/P5gIil4sewk"
+                <div class="vid2"><iframe src="https://www.youtube.com/embed/P5gIil4sewk"
                         title="Dr. Lavanya&#39;s Dental Clinic in Hyderabad" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -258,6 +271,31 @@
         </div>
     </footer>
 
+    <script>
+       const toggleButton = document.querySelector('.toggle-button');
+        const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a');
+        const navbar = document.querySelector('.navbar');
+
+        toggleButton.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            const isClickInsideNavbar = navbar.contains(event.target);
+            const isMenuOpen = menu.classList.contains('active');
+
+            if (isMenuOpen && !isClickInsideNavbar) {
+                menu.classList.remove('active');
+            }
+        });
+    </script>
 
 </body>
 
