@@ -394,7 +394,7 @@ footer {
     }
 
     #services .card {
-        height: 580px;
+        height: auto;
     }
 }
 
