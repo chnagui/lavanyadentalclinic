@@ -1,0 +1,454 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#contactinfo {
+    background: #e0332b;
+    color: white;
+}
+
+#contactinfo a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.first-header button {
+    margin: 5px 0px 5px 10px;
+    background-color: #202C45;
+    border-radius: 40px;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px 0px 5px 10px;
+}
+
+
+
+header {
+    background: #fff;
+    padding: 10px 0;
+    color: #3a3a3a;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 160px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #E0332B;
+}
+
+#hero {
+    background: url("./images/Dental-Implants-3.webp") no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+#hero .hero-content {
+    padding: 20px;
+    display: inline-block;
+}
+
+#hero .btn {
+    background: #f90;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#inputSec {
+    background-color: #038a6e;
+    border-style: solid;
+    border-width: 0;
+    background-clip: border-box;
+    border-color: #edf0f3;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+}
+
+#inputSec .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+#inputSec input[type="text"],
+#inputSec input[type="submit"] {
+    max-width: 100%;
+    font-size: 15px;
+}
+
+#inputSec input[type="text"] {
+    max-width: 300px;
+    width: 100%;
+}
+
+#inputSec input[type="submit"] {
+    padding: 10px 40px;
+    background: #E0332B;
+    color: white;
+    border: none;
+}
+
+.sub-ratings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #e0332b;
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px 0;
+    border-radius: 39px;
+    border: 10px solid #038A6E;
+}
+
+.years,
+.branches,
+.implants {
+    border-right: 5px solid white;
+    max-width: 300px;
+    width: 100%;
+}
+
+.rate {
+    max-width: 300px;
+    width: 100%;
+}
+
+#sec4 {
+    margin-top: 50px;
+}
+
+#sec4 h2 {
+    font-size: 40px;
+    color: #3A3A3A;
+    font-weight: 300;
+    font-family: sans-serif;
+    /* border-bottom: 3px solid red; */
+    margin-bottom: 20px;
+}
+
+#sec4 .row {
+    display: flex;
+    align-items: start;
+    /* gap: 22px; */
+    line-height: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sec4-text,
+.sec4-img {
+    width: 45%;
+}
+
+#sec4 img {
+    border: 2px solid black;
+}
+
+#sec4 .row::before {
+    content: ' ';
+    border-top: 3px solid red;
+    position: absolute;
+    width: 9%;
+}
+
+#services {
+    margin-top: 50px;
+}
+
+#services .row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+#services .card {
+    width: 24.5%;
+    background: white;
+    border: 1px solid #80808047;
+    height: 650px;
+}
+
+#services a {
+    color: #0274be;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 41px;
+}
+
+#services .text {
+    padding: 10px 20px;
+}
+
+#services .text2 p {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 10px 20px;
+}
+
+#services button {
+    background-color: rgb(32, 44, 69);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+#services .btn {
+    text-align: left;
+    padding: 0px 20px;
+}
+
+#choose h2 {
+    color: rgb(58, 58, 58);
+    font-weight: 100;
+    font-size: 32px;
+}
+
+#choose .chs1 {
+    width: 70%;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#choose .chs2 {
+    width: 25%;
+    background-color: #038A6E;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+#choose .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#choose input[type="text"],
+#choose input[type="number"],
+#choose input[type="email"] {
+    width: 100%;
+    max-width: 380px;
+    height: 40px;
+}
+
+#choose input[type="submit"] {
+    border: none;
+    margin-top: 30px;
+    font-size: 15px;
+    padding: 10px 20px;
+    background: #0000ff54;
+    color: white;
+}
+
+#choose {
+    margin-bottom: 30px;
+}
+
+#text-wrap {
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+#services .row::before {
+    content: ' ';
+    border-top: 3px solid red;
+    position: absolute;
+    width: 9%;
+    margin-bottom: 20px;
+}
+
+.vid1,
+.vid2 {
+    width: 300px;
+}
+
+.services2 {
+    margin-bottom: 30px;
+}
+
+.service-cards,
+.doctor-cards,
+.gallery-grid,
+.testimonial-carousel {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.testimonial-carousel .testimonial {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a,
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .sec4-text,
+    .sec4-img {
+        width: auto;
+    }
+
+    #sec4 .row {
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding-right: 0;
+    }
+
+    #services .card {
+        height: 580px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #services .card {
+        width: 300px;
+    }
+
+    #choose .chs1 {
+        width: 70%;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    #choose .chs1, #choose .chs2{
+        width: 100%;
+    }
+    #choose input[type="text"], #choose input[type="number"], #choose input[type="email"] {
+        width: 100%;
+        max-width: none;
+    }
+    #inputSec input[type="text"] {
+        max-width: none;
+        width: 100%;
+        height: 30px;
+    }
+    .first-header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        align-items: center;
+    }
+    .sec4-img p img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px){
+    .sub-ratings {
+        font-size: 15px;
+        padding: 5px 0;
+        margin: 5px 0;
+        border: 5px solid #038A6E;
+    }
+    .years, .branches, .implants {
+        height: 110px;
+    }
+}
+@media screen and (max-width: 376px){
+    .sub-ratings {
+        flex-wrap: wrap;
+    }
+    .years, .branches, .implants {
+        border-bottom: 5px solid white;
+        border-right: none;
+    }
+}
