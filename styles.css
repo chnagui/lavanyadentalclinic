@@ -408,18 +408,25 @@ footer {
         font-size: 15px;
         line-height: 25px;
     }
-    #choose .chs1, #choose .chs2{
+
+    #choose .chs1,
+    #choose .chs2 {
         width: 100%;
     }
-    #choose input[type="text"], #choose input[type="number"], #choose input[type="email"] {
+
+    #choose input[type="text"],
+    #choose input[type="number"],
+    #choose input[type="email"] {
         width: 100%;
         max-width: none;
     }
+
     #inputSec input[type="text"] {
         max-width: none;
         width: 100%;
         height: 30px;
     }
+
     .first-header {
         display: flex;
         justify-content: center;
@@ -428,27 +435,117 @@ footer {
         padding-top: 10px;
         align-items: center;
     }
+
     .sec4-img p img {
         width: 100%;
     }
 }
-@media screen and (max-width: 576px){
+
+@media screen and (max-width: 576px) {
     .sub-ratings {
         font-size: 15px;
         padding: 5px 0;
         margin: 5px 0;
         border: 5px solid #038A6E;
     }
-    .years, .branches, .implants {
+
+    .years,
+    .branches,
+    .implants {
         height: 110px;
     }
 }
-@media screen and (max-width: 376px){
+
+@media screen and (max-width: 376px) {
     .sub-ratings {
         flex-wrap: wrap;
     }
-    .years, .branches, .implants {
+
+    .years,
+    .branches,
+    .implants {
         border-bottom: 5px solid white;
         border-right: none;
     }
 }
+
+
+
+/* --------------Responisve menu styles begin ---------------*/
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: white;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none; /* Hidden by default on larger screens */
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide the menu by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        z-index: 10; /* Ensure it's above other content */
+    }
+
+    .menu.active {
+        display: flex; /* Show the menu when the 'active' class is added */
+    }
+
+    .menu li {
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+
+    .menu li:last-child {
+        border-bottom: none;
+    }
+
+    .toggle-button {
+        display: block; /* Show the toggle button on small screens */
+    }
+}
+/* --------------Responisve menu styles begin ---------------*/
